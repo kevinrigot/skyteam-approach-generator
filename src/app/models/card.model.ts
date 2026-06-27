@@ -28,13 +28,13 @@ export interface CaseData {
 
 export interface CardData {
   id: string;
-  name: string;
   titleAbbr: string;
   titleFull: string;
   difficulty: Difficulty;
   scenarioModules: ScenarioModuleType[];
   cases: CaseData[];
   backCard?: CardData;
+  publicCardId?: string;
 }
 
 export function defaultCase(): CaseData {
@@ -50,7 +50,6 @@ export function defaultCase(): CaseData {
 export function defaultCard(): CardData {
   return {
     id: crypto.randomUUID(),
-    name: 'New Card',
     titleAbbr: 'BRU',
     titleFull: 'Brussels',
     difficulty: 'green',

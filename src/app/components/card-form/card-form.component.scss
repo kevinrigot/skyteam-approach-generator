@@ -150,6 +150,12 @@
   text-overflow: ellipsis;
 }
 
+.public-badge {
+  font-size: 0.6rem;
+  color: #F5C518;
+  flex-shrink: 0;
+}
+
 .delete-btn {
   background: none;
   border: none;

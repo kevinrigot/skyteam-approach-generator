@@ -1,0 +1,2061 @@
+[Browse
+  {
+    "id": "e6a60f96-e6d3-47de-b226-34d021721c9b",
+    "titleAbbr": "KBP",
+    "titleFull": "Boryspil",
+    "difficulty": "yellow",
+    "scenarioModules": [
+      "capability2"
+    ],
+    "cases": [
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": true
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": true
+      },
+      {
+        "planes": 1,
+        "dices": 1,
+        "direction": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": true
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 2,
+        "dices": 1,
+        "direction": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 1,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "dac1c260-79eb-4573-87e2-f53636ccecea",
+      "titleAbbr": "KBP",
+      "titleFull": "Boryspil",
+      "difficulty": "black",
+      "scenarioModules": [
+        "alarms",
+        "capability2"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": true
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": true
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": true
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": true
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": true
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 2,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 2,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "2acef984-5d17-4648-804f-c2cd0ea710fb",
+    "titleAbbr": "TER",
+    "titleFull": "Lajes, Azores",
+    "difficulty": "yellow",
+    "scenarioModules": [
+      "specific_rules",
+      "ice_brake",
+      "capability2"
+    ],
+    "cases": [
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "d295281e-e092-4d06-b8c6-370f40ae34ff",
+      "titleAbbr": "TER",
+      "titleFull": "Lajes, Azores",
+      "difficulty": "black",
+      "scenarioModules": [
+        "specific_rules",
+        "ice_brake",
+        "capability1"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 4,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "2630317a-4338-4cc7-8462-858afc977851",
+    "titleAbbr": "DUS",
+    "titleFull": "Dusseldorf",
+    "difficulty": "yellow",
+    "scenarioModules": [
+      "altitude_a",
+      "fuel_leakage",
+      "capability2"
+    ],
+    "cases": [
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 2,
+        "dices": 2,
+        "direction": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          true,
+          true,
+          true,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "dbdaca23-6816-457a-8625-49b6e4ce0baf",
+      "titleAbbr": "DUS",
+      "titleFull": "Dusseldorf",
+      "difficulty": "red",
+      "scenarioModules": [
+        "altitude_c",
+        "fuel_leakage",
+        "capability1",
+        "time"
+      ],
+      "cases": [
+        {
+          "planes": 2,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 3,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 2,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 2,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 2,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "40bcca11-99ae-4045-ad85-547340f8f30c",
+    "titleAbbr": "SYD",
+    "titleFull": "Kingsford Smith",
+    "difficulty": "green",
+    "scenarioModules": [
+      "alarms",
+      "capability1"
+    ],
+    "cases": [
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "942a99a2-9aca-4724-a376-5c4f617f5ad6",
+      "titleAbbr": "SYD",
+      "titleFull": "Kingsford Smith",
+      "difficulty": "red",
+      "scenarioModules": [
+        "altitude_c",
+        "alarms",
+        "capability2"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 4,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 2,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "e5f71358-a5db-4529-afa6-577f2abed03c",
+    "titleAbbr": "MAD",
+    "titleFull": "Madrid-B.",
+    "difficulty": "yellow",
+    "scenarioModules": [
+      "altitude_5000",
+      "intern",
+      "capability1"
+    ],
+    "cases": [
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 1,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 1,
+        "direction": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 4,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "6f046570-6871-4ebe-bbfc-54702857cc50",
+      "titleAbbr": "MAD",
+      "titleFull": "Madrid-B.",
+      "difficulty": "black",
+      "scenarioModules": [
+        "altitude_5000",
+        "fuel",
+        "time",
+        "capability1"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 3,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "8ca4b7ab-c668-422b-87b3-78612de9504a",
+    "titleAbbr": "CPT",
+    "titleFull": "Cape Town",
+    "difficulty": "green",
+    "scenarioModules": [
+      "altitude_b",
+      "fuel",
+      "capability1"
+    ],
+    "cases": [
+      {
+        "planes": 1,
+        "dices": 1,
+        "direction": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "alarms": 2,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 2,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "f3fdd102-a5be-4907-9436-26dbe8ddea37",
+      "titleAbbr": "CPT",
+      "titleFull": "Cape Town",
+      "difficulty": "black",
+      "scenarioModules": [
+        "altitude_d",
+        "alarms",
+        "wind",
+        "intern"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 2,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 3,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "54568b7e-0d6a-4333-87ac-768c87076927",
+    "titleAbbr": "PEK",
+    "titleFull": "Bejing Capital",
+    "difficulty": "green",
+    "scenarioModules": [
+      "altitude_a",
+      "capability1"
+    ],
+    "cases": [
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "b1bdfdf4-3868-4b16-ab04-e77ab3e2f3cf",
+      "titleAbbr": "PEK",
+      "titleFull": "Bejing Capital",
+      "difficulty": "red",
+      "scenarioModules": [
+        "altitude_c",
+        "wind",
+        "capability1"
+      ],
+      "cases": [
+        {
+          "planes": 2,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 2,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            true,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 1,
+          "direction": [
+            false,
+            false,
+            true,
+            true,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 3,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "d7b7a0ee-2109-4401-abe0-986cb1450b4f",
+    "titleAbbr": "WAW",
+    "titleFull": "Warsaw",
+    "difficulty": "yellow",
+    "scenarioModules": [
+      "specific_rules",
+      "alarms",
+      "fuel",
+      "capability1"
+    ],
+    "cases": [
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 1,
+        "direction": [
+          false,
+          false,
+          true,
+          true,
+          true
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "alarms": 1,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 2,
+        "direction": [
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "9c228cad-b721-4a8a-b86a-ecf02109c6f3",
+      "titleAbbr": "WAW",
+      "titleFull": "Warsaw",
+      "difficulty": "red",
+      "scenarioModules": [
+        "specific_rules",
+        "alarms",
+        "fuel",
+        "capability1",
+        "wind"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 1,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 3,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "42aa9906-c016-49e4-a36a-67411bffdfcc",
+    "titleAbbr": "NZIR",
+    "titleFull": "Ice Run.",
+    "difficulty": "red",
+    "scenarioModules": [
+      "specific_rules",
+      "reverse_wind",
+      "ice_brake",
+      "capability1"
+    ],
+    "cases": [
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          true,
+          true,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 0,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "32f43b0b-00eb-43c8-bb78-f021bafd78b0",
+      "titleAbbr": "NZIR",
+      "titleFull": "Ice Run.",
+      "difficulty": "black",
+      "scenarioModules": [
+        "specific_rules",
+        "fuel",
+        "reverse_wind",
+        "ice_brake",
+        "intern"
+      ],
+      "cases": [
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            true,
+            true,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            true,
+            true
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            true,
+            true,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 2,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "05429a9a-d80c-49e7-bbee-72dfd8ab9c21",
+    "titleAbbr": "SXM",
+    "titleFull": "Pri. Juliana",
+    "difficulty": "yellow",
+    "scenarioModules": [
+      "altitude_b",
+      "altitude_5000",
+      "intern"
+    ],
+    "cases": [
+      {
+        "planes": 2,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 2,
+        "dices": 1,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 1,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 1,
+        "dices": 0,
+        "direction": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      },
+      {
+        "planes": 0,
+        "dices": 3,
+        "direction": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "alarms": 0,
+        "fullTrust": false
+      }
+    ],
+    "backCard": {
+      "id": "dfe82e19-1247-48a6-a47d-5f33d7fe817d",
+      "titleAbbr": "SXM",
+      "titleFull": "Pri. Juliana",
+      "difficulty": "red",
+      "scenarioModules": [
+        "altitude_d",
+        "altitude_5000",
+        "fuel",
+        "intern"
+      ],
+      "cases": [
+        {
+          "planes": 2,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 1,
+          "dices": 0,
+          "direction": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 0,
+          "direction": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        },
+        {
+          "planes": 0,
+          "dices": 3,
+          "direction": [
+            true,
+            true,
+            false,
+            false,
+            false
+          ],
+          "alarms": 0,
+          "fullTrust": false
+        }
+      ]
+    }
+  }
+]

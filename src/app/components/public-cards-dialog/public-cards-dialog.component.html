@@ -1,0 +1,40 @@
+<div class="dialog-overlay" (click)="onOverlayClick($event)">
+  <div class="dialog-box">
+    <div class="dialog-header">
+      <h2>Public Approach Cards</h2>
+      <button class="close-btn" (click)="close.emit()">✕</button>
+    </div>
+
+    <div class="dialog-body">
+      @if (loading()) {
+        <p class="state-msg">Loading cards…</p>
+      } @else if (error()) {
+        <p class="state-msg error">Failed to load cards. Check your connection.</p>
+      } @else if (cards().length === 0) {
+        <p class="state-msg">No public cards available.</p>
+      } @else {
+        <div class="card-list">
+          @for (card of cards(); track card.id) {
+            <div class="card-item" (click)="pick(card)">
+              <div class="card-badges">
+                <span class="saved-abbr" [ngClass]="card.difficulty">{{ card.titleAbbr }}</span>
+                @if (card.backCard) {
+                  <span class="saved-sep">/</span>
+                  <span class="saved-abbr" [ngClass]="card.backCard.difficulty">{{ card.backCard.titleAbbr }}</span>
+                }
+              </div>
+              <div class="card-info">
+                <span class="card-name">{{ card.titleFull }}</span>
+                <div class="card-modules">
+                  @for (mod of card.scenarioModules; track mod) {
+                    <app-icon [name]="mod" [size]="18" color="#4a7fc1"></app-icon>
+                  }
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</div>

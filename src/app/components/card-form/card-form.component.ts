@@ -3,8 +3,10 @@ import { FormsModule } from '@angular/forms';
 import { NgClass, TitleCasePipe } from '@angular/common';
 import { CardData, CaseData, Difficulty, ScenarioModuleType, defaultCard, defaultCase } from '../../models/card.model';
 import { CardStorageService } from '../../services/card-storage.service';
+import { ApproachCardsService } from '../../services/approach-cards.service';
 import { CaseFormComponent } from '../case-form/case-form.component';
 import { IconComponent } from '../icon/icon.component';
+import { PublicCardsDialogComponent } from '../public-cards-dialog/public-cards-dialog.component';
 
 interface ModuleOption {
   type: ScenarioModuleType;
@@ -20,7 +22,7 @@ interface ModuleGroup {
 
 @Component({
   selector: 'app-card-form',
-  imports: [FormsModule, NgClass, TitleCasePipe, CaseFormComponent, IconComponent],
+  imports: [FormsModule, NgClass, TitleCasePipe, CaseFormComponent, IconComponent, PublicCardsDialogComponent],
   templateUrl: './card-form.component.html',
   styleUrl: './card-form.component.scss',
 })
@@ -34,6 +36,8 @@ export class CardFormComponent {
   activeTab = signal<'front' | 'back'>('front');
 
   private storage = inject(CardStorageService);
+  private approachCards = inject(ApproachCardsService);
+  showPublicDialog = signal(false);
 
   private _last = this.storage.loadLast();
   card = signal<CardData>({ ...this._last, backCard: undefined });
@@ -158,6 +162,28 @@ export class CardFormComponent {
       cases[index] = updated;
       return { ...c, cases };
     });
+  }
+
+  openPublicDialog() {
+    this.showPublicDialog.set(true);
+  }
+
+  closePublicDialog() {
+    this.showPublicDialog.set(false);
+  }
+
+  loadPublicCard(card: CardData) {
+    const localCard: CardData = { ...card, id: crypto.randomUUID(), publicCardId: card.id, backCard: undefined };
+    this.card.set(localCard);
+    if (card.backCard) {
+      this.backCard.set({ ...card.backCard, id: crypto.randomUUID(), publicCardId: card.backCard.id });
+      this.twinMode.set(true);
+    } else {
+      this.backCard.set(defaultCard());
+      this.twinMode.set(false);
+    }
+    this.activeTab.set('front');
+    this.closePublicDialog();
   }
 
   newCard() {

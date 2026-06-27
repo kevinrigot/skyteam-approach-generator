@@ -5,6 +5,7 @@
     <h2>Card Generator</h2>
     <div class="header-actions">
       <button class="btn btn-secondary" (click)="newCard()">+ New</button>
+      <button class="btn btn-secondary" (click)="openPublicDialog()">Public Approach Cards</button>
       <button class="btn btn-light-toggle" [class.active]="lightVersion()" (click)="toggleLightVersion()" title="Light version (saves ink when printing)">Light</button>
       <button class="btn btn-print" (click)="print()">🖨 Print</button>
     </div>
@@ -37,12 +38,22 @@
               <span class="saved-sep">/</span>
               <span class="saved-abbr" [ngClass]="saved.backCard.difficulty">{{ saved.backCard.titleAbbr }}</span>
             }
+            @if (saved.publicCardId) {
+              <span class="public-badge" title="Based on a public card">★</span>
+            }
             <span class="saved-name">{{ saved.titleFull }}</span>
             <button class="delete-btn" (click)="deleteCard(saved.id, $event)">✕</button>
           </div>
         }
       </div>
     </div>
+  }
+
+  @if (showPublicDialog()) {
+    <app-public-cards-dialog
+      (close)="closePublicDialog()"
+      (select)="loadPublicCard($event)"
+    />
   }
 
   <!-- Tab bar (Back tab acts as twin mode toggle) -->
