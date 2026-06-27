@@ -16,10 +16,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
-      - run: echo "${{ github.sha }}-${{ github.run_id }}" > dist/skyteam-approach-generator/browser/version.txt
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SKYTEAM_APPROACH_GENERATOR }}
-          channelId: live
-          projectId: skyteam-approach-generator
+      - name: Deploy to Firebase Hosting
+        env:
+          SA_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SKYTEAM_APPROACH_GENERATOR }}
+        run: |
+          SA_FILE=$(mktemp --suffix=.json)
+          printf '%s' "$SA_JSON" > "$SA_FILE"
+          output=$(GOOGLE_APPLICATION_CREDENTIALS="$SA_FILE" \
+            npx firebase-tools@latest deploy \
+              --only hosting \
+              --project skyteam-approach-generator \
+              --non-interactive 2>&1)
+          exit_code=$?
+          rm -f "$SA_FILE"
+          printf '%s\n' "$output"
+          if [ $exit_code -ne 0 ] && printf '%s' "$output" | grep -q "is the current active version"; then
+            echo "Version already live — nothing to do."
+            exit 0
+          fi
+          exit $exit_code
