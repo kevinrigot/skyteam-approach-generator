@@ -46,7 +46,7 @@ export class LandingComponent implements AfterViewInit {
     if (reducedMotion) {
       cells.forEach(({ el, target }) => { el.textContent = target; });
       statusEl.textContent = 'NOW BOARDING';
-      gateEl.textContent   = 'B07';
+      gateEl.textContent   = 'B06';
       ctaEl.classList.add('visible');
       return;
     }
