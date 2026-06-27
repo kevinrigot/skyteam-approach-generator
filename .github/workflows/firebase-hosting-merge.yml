@@ -6,13 +6,17 @@ on:
   push:
     branches:
       - main
+concurrency:
+  group: firebase-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
-      - run: echo "${{ github.sha }}" > dist/skyteam-approach-generator/browser/version.txt
+      - run: echo "${{ github.sha }}-${{ github.run_id }}" > dist/skyteam-approach-generator/browser/version.txt
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
