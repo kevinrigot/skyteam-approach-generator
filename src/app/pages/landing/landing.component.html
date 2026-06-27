@@ -1,0 +1,60 @@
+<div class="page">
+
+  <div class="board-frame" role="img" aria-label="Departure board showing SkyTeam Approach Generator now boarding">
+
+    <div class="board-chrome">
+      <span class="chrome-dot"></span>
+      <span class="chrome-dot"></span>
+      <span class="chrome-dot"></span>
+    </div>
+
+    <div class="board-headers">
+      <span class="board-col-label">Destination</span>
+      <span class="board-col-label">Status</span>
+      <span class="board-col-label">Gate</span>
+    </div>
+
+    <div class="board-row row-ghost">
+      <div class="ghost-dest">CDG &middot; PARIS CHARLES DE GAULLE</div>
+      <div class="col-status">DEPARTED</div>
+      <div class="col-gate">A03</div>
+    </div>
+
+    <div class="board-row row-ghost">
+      <div class="ghost-dest">NRT &middot; TOKYO NARITA</div>
+      <div class="col-status">ON TIME</div>
+      <div class="col-gate">C12</div>
+    </div>
+
+    <div class="board-row row-main">
+      <div class="flip-dest" #flipDest></div>
+      <div class="col-status"><span #statusText>&nbsp;&nbsp;&middot;&middot;&middot;&nbsp;&nbsp;</span></div>
+      <div class="col-gate" #mainGate>&nbsp;</div>
+    </div>
+
+    <div class="board-row row-ghost">
+      <div class="ghost-dest">DXB &middot; DUBAI INTERNATIONAL</div>
+      <div class="col-status">DELAYED</div>
+      <div class="col-gate">F08</div>
+    </div>
+
+    <div class="board-row row-ghost">
+      <div class="ghost-dest">JFK &middot; NEW YORK KENNEDY</div>
+      <div class="col-status">ON TIME</div>
+      <div class="col-gate">D02</div>
+    </div>
+
+    <div class="board-chrome-bottom"></div>
+  </div>
+
+  <div class="cta-area" #ctaArea>
+    <div class="cta-eyebrow">Your boarding pass</div>
+    <button class="cta-btn" (click)="goToGenerator()">
+      Generate your approach card
+      <span class="cta-arr">&#8594;</span>
+    </button>
+  </div>
+
+  <div class="mark">SkyTeam Approach Generator &bull; 2026</div>
+
+</div>

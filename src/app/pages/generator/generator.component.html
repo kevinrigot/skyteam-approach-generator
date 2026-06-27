@@ -1,0 +1,30 @@
+<div class="generator-layout">
+
+  <aside class="form-sidebar">
+    <app-card-form
+      (cardChange)="onCardChange($event)"
+      (backCardChange)="onBackCardChange($event)"
+      (twinModeChange)="onTwinModeChange($event)"
+      (lightVersionChange)="onLightVersionChange($event)">
+    </app-card-form>
+  </aside>
+
+  <main class="preview-area" #previewArea>
+    <div class="preview-label">Preview</div>
+    <div class="card-scale-zone">
+      <div class="card-preview-wrapper"
+           [style.transform]="'scale(' + previewScale() + ')'"
+           [style.transform-origin]="'center center'">
+        @if (twinMode()) {
+          <div class="card-pair">
+            <app-card-preview #cardPreview [card]="card()"     [lightVersion]="lightVersion()"></app-card-preview>
+            <app-card-preview              [card]="backCard()"  [lightVersion]="lightVersion()"></app-card-preview>
+          </div>
+        } @else {
+          <app-card-preview #cardPreview [card]="card()" [lightVersion]="lightVersion()"></app-card-preview>
+        }
+      </div>
+    </div>
+  </main>
+
+</div>

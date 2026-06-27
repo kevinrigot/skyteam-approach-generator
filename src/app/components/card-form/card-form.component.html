@@ -1,0 +1,134 @@
+<div class="form-panel">
+
+  <!-- Header -->
+  <div class="form-header">
+    <h2>Card Generator</h2>
+    <div class="header-actions">
+      <button class="btn btn-secondary" (click)="newCard()">+ New</button>
+      <button class="btn btn-light-toggle" [class.active]="lightVersion()" (click)="toggleLightVersion()" title="Light version (saves ink when printing)">Light</button>
+      <button class="btn btn-print" (click)="print()">🖨 Print</button>
+    </div>
+  </div>
+
+  <!-- Card Identity (always visible, shared between both cards) -->
+  <div class="section identity-section">
+    <h3>Card Identity</h3>
+    <div class="field-row-2">
+      <div class="field">
+        <label>Airport code</label>
+        <input type="text" [value]="card().titleAbbr" (input)="setTitleAbbr($any($event.target).value)" placeholder="BRU" maxlength="4" />
+      </div>
+      <div class="field">
+        <label>Name</label>
+        <input type="text" [value]="card().titleFull" (input)="setTitleFull($any($event.target).value)" placeholder="Brussels" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Saved cards -->
+  @if (savedCards().length > 0) {
+    <div class="section saved-section">
+      <h3>Saved Cards</h3>
+      <div class="saved-list">
+        @for (saved of savedCards(); track saved.id) {
+          <div class="saved-item" [class.active]="saved.id === card().id" (click)="loadCard(saved)">
+            <span class="saved-abbr" [ngClass]="saved.difficulty">{{ saved.titleAbbr }}</span>
+            @if (saved.backCard) {
+              <span class="saved-sep">/</span>
+              <span class="saved-abbr" [ngClass]="saved.backCard.difficulty">{{ saved.backCard.titleAbbr }}</span>
+            }
+            <span class="saved-name">{{ saved.titleFull }}</span>
+            <button class="delete-btn" (click)="deleteCard(saved.id, $event)">✕</button>
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+  <!-- Tab bar (Back tab acts as twin mode toggle) -->
+  <div class="tab-bar">
+    <button [class.active]="activeTab() === 'front'" (click)="selectFrontTab()">Front</button>
+    <button class="tab-back" [class.active]="activeTab() === 'back'" (click)="selectBackTab()"
+      title="Enable back card for folded printing">
+      Back
+      <span class="toggle" [class.on]="twinMode()"></span>
+    </button>
+  </div>
+
+  <div class="form-columns">
+
+    <!-- Column 1: card settings -->
+    <div class="form-col">
+
+      <!-- Difficulty -->
+      <div class="section">
+        <h3>Difficulty</h3>
+        <div class="difficulty-selector">
+          @for (d of difficulties; track d) {
+            <button class="diff-btn" [ngClass]="d" [class.active]="activeCard().difficulty === d" (click)="setDifficulty(d)">
+              {{ d | titlecase }}
+            </button>
+          }
+        </div>
+      </div>
+
+      <!-- Scenario modules -->
+      <div class="section">
+        <h3>Scenario Modules</h3>
+        @for (group of moduleGroups; track group.label) {
+          <div class="module-group">
+            <div class="module-group-label">{{ group.label }}</div>
+            <div class="modules-grid">
+              @for (mod of group.options; track mod.type) {
+                <button class="module-btn" [class.active]="isModuleActive(mod.type)" [class.wide]="mod.wide"
+                  (click)="toggleModule(mod.type)" [attr.data-tooltip]="mod.label">
+                  <app-icon [name]="mod.type" [size]="20" [width]="mod.iconWidth"
+                    [color]="isModuleActive(mod.type) ? '#fff' : '#4a7fc1'">
+                  </app-icon>
+                </button>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Number of cases -->
+      <div class="section">
+        <h3>Cases</h3>
+        <div class="cases-count-row">
+          <label>Number of cases</label>
+          @if (twinMode() && activeTab() === 'back') {
+            <span class="shared-label">{{ casesCount() }} — same as front</span>
+          } @else {
+            <div class="btn-group">
+              @for (n of [3, 4, 5, 6, 7, 8]; track n) {
+                <button class="num-btn" [class.active]="casesCount() === n" (click)="setCasesCount(n)">{{ n }}</button>
+              }
+            </div>
+          }
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Column 2: case details -->
+    <div class="form-col">
+      <div class="section">
+        <h3>Case Details</h3>
+        <div class="cases-list">
+          @for (c of activeCard().cases; track $index) {
+            <app-case-form
+              [caseData]="c"
+              [caseIndex]="$index"
+              [totalCases]="casesCount()"
+              [showAlarms]="isModuleActive('alarms')"
+              (caseChange)="updateCase($index, $event)"
+            ></app-case-form>
+          }
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

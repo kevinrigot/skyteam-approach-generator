@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #060f20;
+  color: #e0e8f0;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* ── Print: show only the card ── */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  .card-preview-wrapper,
+  .card-preview-wrapper * {
+    visibility: visible !important;
+  }
+
+  .card-preview-wrapper {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+
+  app-card-preview .card {
+    box-shadow: none !important;
+  }
+
+  .card-pair {
+    display: flex !important;
+    gap: 2px !important;
+  }
+
+  .card,
+  .card *,
+  .card-preview-wrapper,
+  .card-preview-wrapper * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

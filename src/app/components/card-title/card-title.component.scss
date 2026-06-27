@@ -1,0 +1,55 @@
+:host { display: block; }
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 7px 4px;
+  min-height: 1.1cm;
+
+  &.green  { background: #4CAF50; }
+  &.yellow { background: #F5C518; }
+  &.red    { background: #E53935; }
+  &.black  { background: #1a1a1a; }
+}
+
+.title-left {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.title-abbr {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+
+  .yellow & { color: #000; }
+}
+
+.title-full {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+
+  .yellow & { color: rgba(0,0,0,0.75); }
+}
+
+.title-modules {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.module-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+
+  &.wide { width: 36px; }
+}

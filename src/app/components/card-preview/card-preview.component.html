@@ -1,0 +1,25 @@
+<div class="card" [class.light]="lightVersion()">
+
+  <app-card-title [card]="card()"></app-card-title>
+
+  <hr class="case-sep">
+
+  <div class="cases" [style.background]="casesBackground()">
+
+    <app-card-case [caseData]="topCase()" type="top" [lightVersion]="lightVersion()" [showAlarms]="showAlarms()"></app-card-case>
+
+    @for (c of middleCases(); track $index) {
+      <hr class="case-sep">
+      <app-card-case [caseData]="c" type="middle" [lightVersion]="lightVersion()" [showAlarms]="showAlarms()"></app-card-case>
+    }
+
+    <hr class="case-sep">
+    <app-card-case [caseData]="bottomCase()" type="bottom" [lightVersion]="lightVersion()" [showAlarms]="showAlarms()"></app-card-case>
+
+  </div>
+
+  <hr class="case-sep">
+
+  <app-card-footer></app-card-footer>
+
+</div>

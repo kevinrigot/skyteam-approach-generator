@@ -1,0 +1,58 @@
+<div class="card-case" [class.mid-case]="isTop()" [class.case-col]="!isTop()">
+
+  <div class="planes-col">
+    @for (p of range(caseData().planes); track p) {
+      <app-icon name="plane" [size]="16" [color]="iconWhite()"></app-icon>
+    }
+  </div>
+
+  @if (isTop()) {
+    <div class="center-col">
+      <app-icon name="airport" [size]="60" [color]="iconAirport()"></app-icon>
+    </div>
+  } @else {
+    <div class="case-center">
+      @if (caseData().direction.some(a => a)) {
+      <div class="dir-bar" [class.light]="lightVersion()">
+        @for (arrow of caseData().direction; track $index) {
+          <span class="dir-icon" [style.transform]="dirTransform($index, arrow)">
+            @if (arrow) {
+              <app-icon name="triangle" [size]="12" color="#4CAF50"></app-icon>
+            } @else {
+              <app-icon name="x-mark" [size]="12" color="#E53935"></app-icon>
+            }
+          </span>
+        }
+      </div>
+      }
+      <div class="center-content">
+        @if (isBottom()) {
+          <div class="bottom-clouds-inline">
+            <app-icon name="cloud" [size]="16" [color]="iconCloudSm()"></app-icon>
+            <app-icon name="cloud" [size]="20" [color]="iconCloudMd()"></app-icon>
+            <app-icon name="cloud" [size]="16" [color]="iconCloudSm()"></app-icon>
+          </div>
+        }
+      </div>
+      @if (caseData().dices > 0) {
+        <div class="dice-bar" [class.light]="lightVersion()">
+          @for (d of range(caseData().dices); track d) {
+            <app-icon [name]="lightVersion() ? 'box-light' : 'box'" [size]="20" color="#000"></app-icon>
+          }
+        </div>
+      }
+    </div>
+  }
+
+  <div class="events-col">
+    @if (caseData().fullTrust) {
+      <app-icon name="full-trust" [size]="16" [color]="iconWhite()"></app-icon>
+    }
+    @if (showAlarms()) {
+      @for (a of range(caseData().alarms); track a) {
+        <app-icon name="alarm" [size]="16" color="#F44336"></app-icon>
+      }
+    }
+  </div>
+
+</div>

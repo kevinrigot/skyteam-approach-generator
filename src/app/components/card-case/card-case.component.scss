@@ -1,0 +1,142 @@
+:host {
+  display: block;
+  margin: 5px 0;
+  height: calc(2.75cm - 10px);
+}
+.card-case {
+  height: 100%;
+  background: linear-gradient(160deg, #0e2247 0%, #0a1628 100%);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 6px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px),
+      radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+    background-size: 20px 20px, 35px 35px;
+    background-position: 0 0, 10px 10px;
+    pointer-events: none;
+  }
+}
+
+:host-context(.light) .card-case {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  &::before { display: none; }
+}
+
+.dir-bar.light  { border: 1px solid rgba(0, 0, 0, 0.18); }
+.dice-bar.light { border: 1px solid rgba(0, 0, 0, 0.18); }
+
+/* Top case — row layout */
+.mid-case {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 3px;
+}
+
+.center-col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Middle / bottom cases — row layout with nested center column */
+.case-col {
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0 3px;
+}
+
+.dir-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  background: white;
+  border-radius: 0 0 6px 6px;
+  padding: 2px 8px 14px;
+  flex-shrink: 0;
+  z-index: 1;
+  margin-top: -2px;
+}
+
+.dir-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.case-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.center-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.dice-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background: white;
+  border-radius: 6px 6px 0 0;
+  padding: 3px 6px;
+  flex-shrink: 0;
+  z-index: 1;
+  margin-bottom: -2px;
+}
+
+.planes-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 20px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.events-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+  width: 20px;
+  flex-shrink: 0;
+  z-index: 1;
+  align-self: flex-start;
+  padding-top: 6px;
+}
+
+
+.bottom-clouds-inline {
+  display: flex;
+  gap: 1px;
+  align-items: flex-end;
+  z-index: 1;
+}

@@ -1,0 +1,84 @@
+<div class="case-wrapper">
+
+  <div class="case-label-tag">{{ label() }}</div>
+
+  <div class="card-case" [class.mid-case]="isTop()" [class.case-col]="!isTop()">
+
+    <!-- Left: planes -->
+    <div class="planes-col">
+      @for (i of planeSlots; track i) {
+        <button class="icon-btn" (click)="clickPlane(i)" [title]="'Set ' + (i + 1) + ' plane(s)'">
+          <app-icon name="plane" [size]="20"
+            [color]="caseData().planes > i ? '#fff' : 'rgba(255,255,255,0.12)'">
+          </app-icon>
+        </button>
+      }
+    </div>
+
+    <!-- Center: airport (top) or direction + content + dice (middle/bottom) -->
+    @if (isTop()) {
+      <div class="center-col">
+        <app-icon name="airport" [size]="60" color="rgba(255,255,255,0.85)"></app-icon>
+      </div>
+    } @else {
+      <div class="case-center">
+
+        <div class="dir-bar">
+          @for (i of directionIndices; track i) {
+            <button class="dir-btn" (click)="toggleDirection(i)"
+              [title]="caseData().direction[i] ? 'Remove arrow' : 'Add arrow'">
+              <span class="dir-icon" [style.transform]="dirTransform(i, caseData().direction[i])">
+                <app-icon
+                  [name]="caseData().direction[i] ? 'triangle' : 'x-mark'"
+                  [size]="14"
+                  [color]="caseData().direction[i] ? '#4CAF50' : '#E53935'">
+                </app-icon>
+              </span>
+            </button>
+          }
+        </div>
+
+        <div class="center-content">
+          @if (isBottom()) {
+            <div class="bottom-clouds-inline">
+              <app-icon name="cloud" [size]="16" color="rgba(255,255,255,0.6)"></app-icon>
+              <app-icon name="cloud" [size]="20" color="rgba(255,255,255,0.75)"></app-icon>
+              <app-icon name="cloud" [size]="16" color="rgba(255,255,255,0.6)"></app-icon>
+            </div>
+          }
+        </div>
+
+        <div class="dice-bar">
+          @for (i of diceSlots; track i) {
+            <button class="icon-btn" (click)="clickDice(i)" [title]="'Set ' + (i + 1) + ' dice'">
+              <app-icon name="box" [size]="20"
+                [color]="caseData().dices > i ? '#000' : 'rgba(0,0,0,0.2)'">
+              </app-icon>
+            </button>
+          }
+        </div>
+
+      </div>
+    }
+
+    <!-- Right: events -->
+    <div class="events-col">
+      <button class="icon-btn" (click)="toggleFullTrust()" title="Full Trust">
+        <app-icon name="full-trust" [size]="20"
+          [color]="caseData().fullTrust ? '#fff' : 'rgba(255,255,255,0.15)'">
+        </app-icon>
+      </button>
+      @if (showAlarms()) {
+        @for (i of alarmSlots; track i) {
+          <button class="icon-btn" (click)="clickAlarm(i)" [title]="'Set ' + (i + 1) + ' alarm(s)'">
+            <app-icon name="alarm" [size]="20" color="#F44336"
+              [style.opacity]="caseData().alarms > i ? 1 : 0.25">
+            </app-icon>
+          </button>
+        }
+      }
+    </div>
+
+  </div>
+
+</div>

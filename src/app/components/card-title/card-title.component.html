@@ -1,0 +1,13 @@
+<div class="card-title" [ngClass]="card().difficulty">
+  <div class="title-left">
+    <span class="title-abbr">{{ card().titleAbbr }}</span>
+    <span class="title-full">{{ card().titleFull }}</span>
+  </div>
+  <div class="title-modules">
+    @for (mod of card().scenarioModules; track mod) {
+      <span class="module-icon" [class.wide]="mod === 'altitude_5000'">
+        <app-icon [name]="mod" [size]="24" [width]="mod === 'altitude_5000' ? 38 : undefined" color="#fff"></app-icon>
+      </span>
+    }
+  </div>
+</div>
