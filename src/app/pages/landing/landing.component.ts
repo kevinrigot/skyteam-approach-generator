@@ -43,10 +43,12 @@ export class LandingComponent implements AfterViewInit {
       cells.push({ el, target: ch, isSpace });
     }
 
+    const NOW_BOARDING = 'NOW BOARDING';
+    const GATE = 'B06';
     if (reducedMotion) {
       cells.forEach(({ el, target }) => { el.textContent = target; });
-      statusEl.textContent = 'NOW BOARDING';
-      gateEl.textContent   = 'B06';
+      statusEl.textContent = NOW_BOARDING;
+      gateEl.textContent   = GATE;
       ctaEl.classList.add('visible');
       return;
     }
@@ -71,8 +73,8 @@ export class LandingComponent implements AfterViewInit {
 
             if (settled - cells.filter(c => c.isSpace).length === nonSpaceCount) {
               setTimeout(() => {
-                gateEl.textContent   = 'B07';
-                statusEl.textContent = 'NOW BOARDING';
+                gateEl.textContent   = GATE;
+                statusEl.textContent = NOW_BOARDING;
                 setTimeout(() => ctaEl.classList.add('visible'), 550);
               }, 280);
             }
